@@ -29,7 +29,7 @@ module.exports = {
   cache: false,
   watch: true,
   devServer: {
-    port: 8181,
+    port: 8001,
     historyApiFallback: true
   },
   entry: {
