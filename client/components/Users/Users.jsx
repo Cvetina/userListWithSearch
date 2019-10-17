@@ -10,14 +10,17 @@
               <div class={style.item}>Login</div>
               <div class={style.item}>Type</div>
           </div>
-          {sortedUsers.map((users) => (
+          {sortedUsers.size > 0 
+            ? sortedUsers.map((users) => (
               <div key={users.get('id')} class={style.row}>
                   <div class={style.item}>{users.get('id')}</div>
                   <div class={style.item}><img class={style.image} src={users.get('avatar_url')} /></div>
                   <div class={style.item}>{users.get('login')}</div>
                   <div class={style.item}>{users.get('type')}</div>
               </div>
-          ))}
+              ))
+              : <div class={style.noResults}>No Search Results</div>
+          }
       </div>
     );
   }
