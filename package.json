@@ -19,7 +19,7 @@
     "hoek": "5.0.3",
     "html-webpack-plugin": "^3.1.0",
     "immutable": "^4.0.0-rc.12",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.13",
     "mini-css-extract-plugin": "^0.2.0",
     "path": "^0.12.7",
     "react": "^16.2.0",
